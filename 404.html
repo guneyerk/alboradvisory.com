@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found · Albor Advisory</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+
+/* Layout: one editorial column on a 1200px grid; the sequence rises off the right edge of the hero; one linen band for contact. */
+:root {
+  --ground: #F7F5F0; --raised: #FFFFFF; --sunk: #EFECE5; --rule: #E2DED5; --rule-strong: #837E74;
+  --ink: #17171B; --ink-muted: #5E5A53; --on-ink: #FFFFFF;
+  --sun: #EA4B2A; --sun-text: #B5321A; --sun-soft: #FCE4DC;
+  --dawn-1: #DDD8CF; --dawn-2: #A7A197; --stone: #E9E5DD; --linen: #EEE7DB;
+  --font-sans: "Instrument Sans", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --max: 1200px; --measure: 680px; --gutter: clamp(20px, 4vw, 40px);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #121214; --raised: #1B1B1F; --sunk: #232328; --rule: #34343A; --rule-strong: #7F7F87;
+    --ink: #F4F2EE; --ink-muted: #ABA8A2; --on-ink: #121214;
+    --sun: #F05A3A; --sun-text: #FF8A70; --sun-soft: #3A1E17;
+    --dawn-1: #4D4A44; --dawn-2: #8A857C; --stone: #26262B; --linen: #24221F;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #121214; --raised: #1B1B1F; --sunk: #232328; --rule: #34343A; --rule-strong: #7F7F87;
+  --ink: #F4F2EE; --ink-muted: #ABA8A2; --on-ink: #121214;
+  --sun: #F05A3A; --sun-text: #FF8A70; --sun-soft: #3A1E17;
+  --dawn-1: #4D4A44; --dawn-2: #8A857C; --stone: #26262B; --linen: #24221F;
+  color-scheme: dark;
+}
+
+@font-face { font-family: "Instrument Sans"; src: url("/fonts/InstrumentSans-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("/fonts/InstrumentSans-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("/fonts/InstrumentSans-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("/fonts/InstrumentSerif-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("/fonts/InstrumentSerif-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--font-sans); font-size: 17px; line-height: 28px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ground); }
+img, svg { max-width: 100%; }
+a { color: inherit; }
+p { margin: 0; }
+h1, h2, h3, h4 { margin: 0; font-weight: 600; text-wrap: balance; }
+em { font-family: var(--font-serif); font-style: italic; font-weight: 400; font-size: 1.08em; letter-spacing: 0; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.skip { position: absolute; left: -9999px; top: 0; }
+.skip:focus { left: max(16px, env(safe-area-inset-left, 0px)); top: 12px; z-index: 30; background: var(--ink); color: var(--on-ink); padding: 8px 14px; border-radius: 8px; text-decoration: none; }
+
+.wrap { max-width: calc(var(--max) + 2 * var(--gutter)); margin: 0 auto; padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+
+/* Logo files are fixed-color: show the dark file on dark grounds */
+.logo-dark { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-light { display: none; } :root:not([data-theme="light"]) .logo-dark { display: block; } }
+:root[data-theme="dark"] .logo-light { display: none; }
+:root[data-theme="dark"] .logo-dark { display: block; }
+
+
+main { min-height: 100vh; display: grid; align-content: center; gap: 24px; padding-block: 64px; }
+main img { height: 32px; width: auto; }
+h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -.025em; }
+.btn { font-size: 15px; font-weight: 600; display: inline-flex; align-items: center; height: 44px; padding: 0 22px; border-radius: 8px; background: var(--ink); color: var(--on-ink); text-decoration: none; width: max-content; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a href="/"><img class="logo-light" src="/assets/albor-lockup-light.svg" alt="Albor Advisory"><img class="logo-dark" src="/assets/albor-lockup-dark.svg" alt="Albor Advisory"></a>
+  <h1>This page doesn't <em>exist</em>.</h1>
+  <p style="color: var(--ink-muted)">The link may be old, or the address mistyped.</p>
+  <a class="btn" href="/">Go to the home page</a>
+</main>
+</body>
+</html>
