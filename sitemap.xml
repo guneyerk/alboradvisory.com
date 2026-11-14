@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://alboradvisory.com/</loc></url>
-  <url><loc>https://alboradvisory.com/trainings</loc></url>
+  <url><loc>https://alboradvisory.com/trainings/</loc></url>
+  <url><loc>https://alboradvisory.com/trainings/thinking-critically-with-ai</loc></url>
+  <url><loc>https://alboradvisory.com/trainings/commercial-finance-for-permacrisis-markets</loc></url>
 </urlset>
